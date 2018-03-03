@@ -3,14 +3,42 @@
 <head>
 	<meta charset="utf-8">		
 	<title>DDW0</title>
+		<style type="text/css">
+
+		#canvas{
+
+		  background-color: red;
+		}	
+
+		</style>
+
 </head>
 <body>
-
-	<h1> Calculadora </h1>
-
-		<div class="">
+		<canvas id="canvas" width="300" height="300">
 			
-		</div>
+		<marquee> FODA SE O CISTEMA </marquee>
 
+		</canvas>
+
+		<script type="text/javascript">
+			
+			var canvas = document.getElementById("canvas")
+
+			var contexto = canvas.getContext('2d'); 
+
+			contexto.fillStyle = 'white';
+
+			contexto.fillRect(100,100,100,100);
+
+			contexto.lineWidth = 5;
+
+			contexto.strokeStyle = 'red';
+
+			contexto.strokeRect(100,100,100,100);
+
+
+
+		</script>
+		
 </body>
 </html>
