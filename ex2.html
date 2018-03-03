@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">		
+	<title>DDW0</title>
+		<style type="text/css">
+
+		#canvas{
+
+		  background-color: blue;
+		}	
+
+		</style>
+
+</head>
+<body>
+		<canvas id="canvas" width="300" height="300">
+			
+		<marquee> FODA SE O CISTEMA </marquee>
+
+		</canvas>
+
+		<script type="text/javascript">
+			
+			var canvas = document.getElementById("canvas")
+
+			var contexto = canvas.getContext('2d'); 
+
+			contexto.beginPath();
+			contexto.moveTo(95,70);
+			contexto.lineTo(70,150);
+			contexto.lineTo(130,150);
+			contexto.lineTo(95,69);
+			contexto.stroke ();
+			contexto.strokeStyle = 'black';
+			contexto.fillStyle = "#000";
+			contexto.linewidth = 10;
+			contexto.stroke();
+
+		</script>
+		
+</body>
+</html>
