@@ -30,9 +30,13 @@
 
 		<script type="text/javascript">
 			
-			var canvas = document.getElementById("canvas")
-
+			var canvas = document.getElementById("canvas");
+			var canvas2 = document.getElementById("canvas2");
+			var canvas3 = document.getElementById("canvas3");
+			
 			var contexto = canvas.getContext('2d'); 
+			var contexto2 = canvas.getContext('2d'); 
+			var contexto3 = canvas.getContext('2d');
 
 			contexto.beginPath();
 			contexto.arc(
@@ -43,13 +47,48 @@
 				0*Math.PI/180, //ponto inicial
 				360*Math.PI/180, //ponto final
 				false // sentido true = horario false = anti-horário
+				
+				);
+//SEGUNDA PARTE TCHE BAH
+//SEGUNDA PARTE TCHE BAH
+			contexto2.lineWidth = 4;
+			
+			contexto2.fillStyle = "yellow" ;
+			contexto2.fill();
+
+				contexto2.beginPath();
+			contexto2.arc(
+
+				166, //X
+				105, //Y
+				13, //radio
+				0*Math.PI/180, //ponto inicial
+				360*Math.PI/180, //ponto final
+				true // sentido true = horario false = anti-horário
 				);
 
-			contexto.lineWidth = 4;
+			contexto2.lineWidth = 4;
 			
-			contexto.fillStyle = "red" ;
-			contexto.fill();
+			contexto2.fillStyle = "black" ;
+			contexto2.fill();
+			
+			//BOCA DO MALUKO :3
+			
+		contexto3.beginPath();
+			
+			
+			contexto3.moveTo(300,250);
+			contexto3.lineTo(150,150);
+			contexto3.lineTo(210,80);
+			
+			contexto3.stroke ();
+			contexto3.strokeStyle = 'black';
+			contexto3.fillStyle = "#000";
+			contexto3.linewidth = 10;
+			contexto3.stroke();
+			
 
+			
 		</script>
 		
 </body>

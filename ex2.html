@@ -6,7 +6,7 @@
 		<style type="text/css">
 
 		#canvas{
-
+			
 		  background-color: blue;
 		}	
 
@@ -23,7 +23,8 @@
 		<script type="text/javascript">
 			
 			var canvas = document.getElementById("canvas")
-
+			contexto.rotate(20*Math.PI/180);
+		
 			var contexto = canvas.getContext('2d'); 
 
 			contexto.beginPath();
@@ -36,7 +37,7 @@
 			contexto.fillStyle = "#000";
 			contexto.linewidth = 10;
 			contexto.stroke();
-
+			strokeStyle = "white";
 		</script>
 		
 </body>
